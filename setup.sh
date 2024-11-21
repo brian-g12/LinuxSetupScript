@@ -1,4 +1,4 @@
-# Written by Brian Graham.
+## Written by Brian Graham.
 
 # Run Critical Updates
 
@@ -20,10 +20,10 @@ if [ -f /etc/os-release ]; then
     . /etc/os-release
     case "$ID" in
         centos|rhel|almalinux|rocky)
-            echo "This is a CentOS/RHEL/AlmaLinux-based system."
+            echo "This is a CentOS/RHEL/Alma/Rocky Linux-based system."
             sudo yum upgrade -y && sudo yum autoremove -y
             ;;
-        else
+        *)
             echo "This is not a CentOS/RHEL/AlmaLinux-based system."
             ;;
     esac
