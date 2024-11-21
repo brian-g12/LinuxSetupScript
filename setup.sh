@@ -50,3 +50,5 @@ else
     echo "This is not a Debian-based system. Exiting..."
 fi
 
+echo "Rebooting to apply updates!"
+sudo reboot
